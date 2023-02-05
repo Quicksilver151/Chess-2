@@ -1,0 +1,15 @@
+
+# Godot-specific ignores
+.import/
+.build/
+.bin/
+.godot/
+addons/
+dialogic/
+bin/
+export.cfg
+export_presets.cfg
+*.gdnlib
+*.gdns
+# Mono-specific ignores
+.mono/
