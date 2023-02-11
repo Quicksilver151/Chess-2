@@ -1,0 +1,13 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bqu8n8wv33wnm"]
+
+[ext_resource type="Texture2D" uid="uid://bhpn3c4ln32mn" path="res://Assets/button_hover.svg" id="1_4p1cm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ar8p"]
+texture = ExtResource("1_4p1cm")
+texture_region_size = Vector2i(30, 30)
+3:3/0 = 0
+
+[resource]
+tile_layout = 5
+tile_size = Vector2i(32, 32)
+sources/6 = SubResource("TileSetAtlasSource_4ar8p")

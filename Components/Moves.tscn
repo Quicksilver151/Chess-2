@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnf31djl113ei"]
+
+[ext_resource type="TileSet" uid="uid://bqu8n8wv33wnm" path="res://Resources/MoveSet.tres" id="1_kf5yn"]
+[ext_resource type="Script" path="res://Code/Moves.gd" id="2_3ggo2"]
+
+[node name="Moves" type="TileMap"]
+modulate = Color(1, 1, 1, 0.32549)
+position = Vector2(-16, -16)
+tile_set = ExtResource("1_kf5yn")
+cell_quadrant_size = 32
+format = 2
+script = ExtResource("2_3ggo2")

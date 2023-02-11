@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://clil83boeaw8b"
+uid="uid://bkdtyg208elq4"
 path="res://.godot/imported/VarelaRound-Regular.ttf-6df4fc8d98ecf17693f6e6ef059a9e1e.fontdata"
 
 [deps]
@@ -14,7 +14,7 @@ dest_files=["res://.godot/imported/VarelaRound-Regular.ttf-6df4fc8d98ecf17693f6e
 
 Rendering=null
 antialiasing=1
-generate_mipmaps=false
+generate_mipmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
@@ -27,7 +27,13 @@ Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[]
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0),
+"variation_embolden": 0.0
+}]
 language_support={}
 script_support={}
 opentype_features={}
