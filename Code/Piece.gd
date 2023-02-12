@@ -1,6 +1,7 @@
 extends Sprite2D;
 class_name Piece;
 
+
 var moves: PackedVector2Array;
 
 
@@ -18,7 +19,8 @@ func _input(event):
 			if relative_mouse_grid_pos in moves:
 				move(relative_mouse_grid_pos)
 				print("kkk")
-	
+
 
 func move(pos):
 	position += pos*32
+
