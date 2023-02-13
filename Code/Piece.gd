@@ -1,4 +1,4 @@
-extends Sprite2D;
+extends Node2D;
 class_name Piece;
 
 
@@ -6,6 +6,15 @@ var moves: PackedVector2Array;
 
 
 func _ready():
+	for child in get_children():
+		if child is TileMap and child.visible:
+			moves.append_array(child.fetch_moves())
+		
+		child.visibility_changed.connect(on_visibility_changed)
+
+
+func on_visibility_changed():
+	moves = PackedVector2Array()
 	for child in get_children():
 		if child is TileMap and child.visible:
 			moves.append_array(child.fetch_moves())
@@ -24,3 +33,7 @@ func _input(event):
 func move(pos):
 	position += pos*32
 
+
+
+func _on_sprite_visibility_changed():
+	pass # Replace with function body.
