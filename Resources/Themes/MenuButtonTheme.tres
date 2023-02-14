@@ -4,7 +4,7 @@
 
 [resource]
 default_font = ExtResource("1_nfwki")
-default_font_size = 64
+default_font_size = 48
 Button/colors/font_outline_color = Color(0.494118, 0.490196, 0.490196, 1)
 Button/constants/outline_size = 8
-Button/font_sizes/font_size = 64
+Button/font_sizes/font_size = 32
