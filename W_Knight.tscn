@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddyyp0x5ikxqt"]
+
+[ext_resource type="Script" path="res://Code/Piece.gd" id="1_cclg1"]
+[ext_resource type="Texture2D" uid="uid://7ogntejrr17q" path="res://Assets/ChessSet1.tres" id="2_rhde2"]
+[ext_resource type="PackedScene" uid="uid://cnf31djl113ei" path="res://Components/Moves.tscn" id="3_kjr5b"]
+
+[node name="W_Knight" type="Node2D"]
+script = ExtResource("1_cclg1")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_rhde2")
+
+[node name="Moves" parent="." instance=ExtResource("3_kjr5b")]
+layer_0/tile_data = PackedInt32Array(-65537, 65542, 1, -2, 65542, 1, -131071, 65542, 1, -65534, 65542, 1, 65538, 65542, 1, 131073, 65542, 1, 196607, 65542, 1, 131070, 65542, 1)
