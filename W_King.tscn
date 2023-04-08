@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://brepxvrobjtj8"]
+
+[ext_resource type="Script" path="res://Code/Piece.gd" id="1_fflcd"]
+[ext_resource type="Texture2D" uid="uid://bq5vrap7mh61w" path="res://Assets/Figures1.png" id="2_whj2v"]
+[ext_resource type="PackedScene" uid="uid://cnf31djl113ei" path="res://Components/Moves.tscn" id="3_dbau5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alo7x"]
+atlas = ExtResource("2_whj2v")
+region = Rect2(47, 0, 15, 16)
+
+[node name="W_King" type="Node2D"]
+script = ExtResource("1_fflcd")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_alo7x")
+
+[node name="Moves" parent="." instance=ExtResource("3_dbau5")]
+layer_0/tile_data = PackedInt32Array(65535, 65542, 1, -1, 65542, 1, -65536, 65542, 1, -65535, 65542, 1, 1, 65542, 1, 65537, 65542, 1, 65536, 65542, 1, 131071, 65542, 1)
