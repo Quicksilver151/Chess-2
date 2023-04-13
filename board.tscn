@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlp13llhkduxp"]
+
+[ext_resource type="PackedScene" uid="uid://yyumvuud53p5" path="res://W_Bishop.tscn" id="1_4dhl3"]
+[ext_resource type="PackedScene" uid="uid://brepxvrobjtj8" path="res://W_King.tscn" id="2_8oxe7"]
+[ext_resource type="PackedScene" uid="uid://ddyyp0x5ikxqt" path="res://W_Knight.tscn" id="3_w27h3"]
+[ext_resource type="PackedScene" uid="uid://dynrliih52cnu" path="res://W_Queen.tscn" id="4_bvh5i"]
+[ext_resource type="PackedScene" uid="uid://cdqss4lyuoeos" path="res://W_Rook.tscn" id="5_5sk2c"]
+
+[node name="Board" type="Node2D"]
+
+[node name="W_Bishop" parent="." instance=ExtResource("1_4dhl3")]
+position = Vector2(80, 16)
+
+[node name="W_Bishop2" parent="." instance=ExtResource("1_4dhl3")]
+position = Vector2(176, 16)
+
+[node name="W_King" parent="." instance=ExtResource("2_8oxe7")]
+position = Vector2(144, 16)
+
+[node name="W_Knight" parent="." instance=ExtResource("3_w27h3")]
+position = Vector2(48, 16)
+scale = Vector2(1, 0.996575)
+
+[node name="W_Knight2" parent="." instance=ExtResource("3_w27h3")]
+position = Vector2(208, 16)
+scale = Vector2(1, 0.996575)
+
+[node name="W_Queen" parent="." instance=ExtResource("4_bvh5i")]
+position = Vector2(112, 16)
+
+[node name="W_Rook" parent="." instance=ExtResource("5_5sk2c")]
+position = Vector2(16, 16)
+
+[node name="W_Rook2" parent="." instance=ExtResource("5_5sk2c")]
+position = Vector2(240, 16)
